@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Алгоритмика Грозный — Международная школа программирования для детей</title>
+    <meta name="description" content="Международная школа программирования и математики для детей 6-18 лет. Грозный, ул. Умара Кадырова 21. Телефон: 89667222244">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== ФОНОВЫЕ ЭЛЕМЕНТЫ ===== -->
+    <div class="bg-grid"></div>
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div class="bg-glow bg-glow-3"></div>
+
+    <!-- ===== НАВИГАЦИЯ ===== -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <span class="bracket">&lt;</span>
+                    <span class="slash">/</span>
+                    <span class="bracket">&gt;</span>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">АЛГОРИТМИКА</span>
+                    <span class="logo-sub">ГРОЗНЫЙ</span>
+                </div>
+            </a>
+            <nav class="nav">
+                <a href="#about" class="nav-link">О школе</a>
+                <a href="#courses" class="nav-link">Курсы</a>
+                <a href="#features" class="nav-link">Преимущества</a>
+                <a href="#contacts" class="nav-link">Контакты</a>
+            </nav>
+            <a href="#contacts" class="btn btn-neon">
+                <span>Записаться</span>
+                <div class="btn-glow"></div>
+            </a>
+            <button class="burger" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ===== ГЕРОЙ ===== -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="pulse-dot"></span>
+                    Международная школа программирования
+                </div>
+                <h1 class="hero-title">
+                    Будущее начинается<br>
+                    <span class="gradient-text">с первой строки кода</span>
+                </h1>
+                <p class="hero-desc">
+                    «Алгоритмика» — международная школа программирования и математики для детей от 6 до 18 лет. 
+                    Учим создавать игры, сайты и приложения на интерактивной платформе. 
+                    Более 1 100 000 выпускников в 90+ странах.
+                </p>
+                <div class="hero-actions">
+                    <a href="#contacts" class="btn btn-primary">
+                        <span>Бесплатный пробный урок</span>
+                    </a>
+                    <a href="#courses" class="btn btn-outline">
+                        <span>Смотреть курсы</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-value" data-count="1100000">0</div>
+                        <div class="stat-label">выпускников</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value" data-count="90">0</div>
+                        <div class="stat-label">стран</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value" data-count="450">0</div>
+                        <div class="stat-label">городов</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="window-header">
+                        <div class="window-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="window-title">hello_algoritmika.py</span>
+                    </div>
+                    <div class="window-body">
+                        <div class="code-line"><span class="cm"># Первый шаг в IT</span></div>
+                        <div class="code-line"><span class="kw">def</span> <span class="fn">start_journey</span>(<span class="var">name</span>):</div>
+                        <div class="code-line indent"><span class="kw">return</span> <span class="str">f"Привет, {name}! 🚀"</span></div>
+                        <div class="code-line">&nbsp;</div>
+                        <div class="code-line"><span class="var">students</span> = [<span class="str">"Амина"</span>, <span class="str">"Магомед"</span>, <span class="str">"Leo"</span>]</div>
+                        <div class="code-line"><span class="kw">for</span> <span class="var">s</span> <span class="kw">in</span> <span class="var">students</span>:</div>
+                        <div class="code-line indent"><span class="fn">print</span>(<span class="fn">start_journey</span>(<span class="var">s</span>))</div>
+                        <div class="code-line">&nbsp;</div>
+                        <div class="code-line"><span class="cm"># Готово! Ты в Алгоритмике 🎮</span></div>
+                        <div class="code-line"><span class="fn">print</span>(<span class="str">"Let's code!"</span>)</div>
+                    </div>
+                    <div class="window-glow"></div>
+                </div>
+
+                <div class="float-card float-card-1">
+                    <div class="float-icon">🎮</div>
+                    <div class="float-text">Игровой формат</div>
+                </div>
+                <div class="float-card float-card-2">
+                    <div class="float-icon">🌍</div>
+                    <div class="float-text">90+ стран</div>
+                </div>
+                <div class="float-card float-card-3">
+                    <div class="float-icon">🏆</div>
+                    <div class="float-text">10 наград</div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== О ШКОЛЕ ===== -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">О школе</div>
+                <h2 class="section-title">Технологичная школа <span class="gradient-text">нового поколения</span></h2>
+                <p class="section-desc">
+                    «Алгоритмика» — это международная школа программирования и математики для детей 6-18 лет, 
+                    основанная в 2016 году. Мы входим в список инновационных продуктов Сколково и являемся 
+                    партнёром конкурса «Учитель года России».
+                </p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-number">01</div>
+                    <h3>Интерактивная платформа</h3>
+                    <p>Собственная образовательная платформа, включённая в реестр отечественного ПО, 
+                    позволяет каждому ребёнку осваивать знания в индивидуальном темпе.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-number">02</div>
+                    <h3>Проектный подход</h3>
+                    <p>Дети сразу создают реальные проекты: игры, сайты, приложения, мультфильмы и 
+                    чат-боты. Никакой скучной теории — только практика.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-number">03</div>
+                    <h3>Международный опыт</h3>
+                    <p>Программы соответствуют ФГОС и адаптированы для детей из разных стран. 
+                    Обучение доступно на русском и английском языках.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-number">04</div>
+                    <h3>Лицензированное образование</h3>
+                    <p>Работаем по образовательной лицензии. По окончании курса каждый ученик 
+                    получает сертификат международного образца.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== КУРСЫ ===== -->
+    <section class="section courses" id="courses">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">Направления</div>
+                <h2 class="section-title">Выберите <span class="gradient-text">свой путь в IT</span></h2>
+                <p class="section-desc">Программы для детей от 6 до 18 лет — от первых шагов в логике до профессиональной разработки.</p>
+            </div>
+            <div class="courses-grid">
+                <div class="course-card course-beginner">
+                    <div class="course-level">6–7 лет</div>
+                    <div class="course-icon">🧩</div>
+                    <h3>Основы логики и программирования</h3>
+                    <p>Первые шаги в мире алгоритмов через игры и творческие задачи.</p>
+                    <ul class="course-list">
+                        <li>Алгоритмическое мышление</li>
+                        <li>Создание простых игр</li>
+                        <li>Работа в команде</li>
+                    </ul>
+                    <div class="course-footer">
+                        <span class="course-price">Бесплатно</span>
+                        <a href="#contacts" class="course-link">Записаться →</a>
+                    </div>
+                </div>
+
+                <div class="course-card course-middle">
+                    <div class="course-level">7–9 лет</div>
+                    <div class="course-icon">💻</div>
+                    <h3>Компьютерная грамотность</h3>
+                    <p>Устройство ПК, безопасный интернет и первые программы.</p>
+                    <ul class="course-list">
+                        <li>Основы ИКТ</li>
+                        <li>Работа с файлами и программами</li>
+                        <li>Безопасность в сети</li>
+                    </ul>
+                    <div class="course-footer">
+                        <span class="course-price">Бесплатно</span>
+                        <a href="#contacts" class="course-link">Записаться →</a>
+                    </div>
+                </div>
+
+                <div class="course-card course-visual">
+                    <div class="course-level">8–10 лет</div>
+                    <div class="course-icon">🎨</div>
+                    <h3>Визуальное программирование</h3>
+                    <p>Scratch и создание собственных игр и мультфильмов.</p>
+                    <ul class="course-list">
+                        <li>Scratch-разработка</li>
+                        <li>Геймдизайн</li>
+                        <li>Анимация</li>
+                    </ul>
+                    <div class="course-footer">
+                        <span class="course-price">Бесплатно</span>
+                        <a href="#contacts" class="course-link">Записаться →</a>
+                    </div>
+                </div>
+
+                <div class="course-card course-python">
+                    <div class="course-level">10–14 лет</div>
+                    <div class="course-icon">🐍</div>
+                    <h3>Программирование на Python</h3>
+                    <p>Профессиональный язык программирования для создания проектов.</p>
+                    <ul class="course-list">
+                        <li>Синтаксис Python</li>
+                        <li>Чат-боты и автоматизация</li>
+                        <li>Работа с данными</li>
+                    </ul>
+                    <div class="course-footer">
+                        <span class="course-price">Бесплатно</span>
+                        <a href="#contacts" class="course-link">Записаться →</a>
+                    </div>
+                </div>
+
+                <div class="course-card course-web">
+                    <div class="course-level">12–17 лет</div>
+                    <div class="course-icon">🌐</div>
+                    <h3>Frontend-разработка</h3>
+                    <p>HTML, CSS, JavaScript — создание современных сайтов.</p>
+                    <ul class="course-list">
+                        <li>Вёрстка сайтов</li>
+                        <li>Интерактивность</li>
+                        <li>Портфолио проектов</li>
+                    </ul>
+                    <div class="course-footer">
+                        <span class="course-price">Бесплатно</span>
+                        <a href="#contacts" class="course-link">Записаться →</a>
+                    </div>
+                </div>
+
+                <div class="course-card course-roblox">
+                    <div class="course-level">9–14 лет</div>
+                    <div class="course-icon">🎮</div>
+                    <h3>Разработка в Roblox</h3>
+                    <p>Создание игр в Roblox Studio на языке Lua.</p>
+                    <ul class="course-list">
+                        <li>Lua-программирование</li>
+                        <li>Дизайн уровней</li>
+                        <li>Монетизация</li>
+                    </ul>
+                    <div class="course-footer">
+                        <span class="course-price">Бесплатно</span>
+                        <a href="#contacts" class="course-link">Записаться →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ПРЕИМУЩЕСТВА ===== -->
+    <section class="section features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">Преимущества</div>
+                <h2 class="section-title">Почему родители <span class="gradient-text">выбирают нас</span></h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon-wrap">
+                        <div class="feature-icon">🎯</div>
+                    </div>
+                    <h3>Практика с первого урока</h3>
+                    <p>Дети сразу создают игры, сайты и приложения. Никакой скучной теории — только реальные проекты в портфолио.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-wrap">
+                        <div class="feature-icon">👩‍🏫</div>
+                    </div>
+                    <h3>Преподаватели-практики</h3>
+                    <p>Наши педагоги — действующие разработчики из международных IT-компаний с опытом работы с детьми.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-wrap">
+                        <div class="feature-icon">🌐</div>
+                    </div>
+                    <h3>Международная среда</h3>
+                    <p>Занятия на русском и английском, группы с детьми из разных стран. Ребёнок учит язык и код одновременно.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-wrap">
+                        <div class="feature-icon">📊</div>
+                    </div>
+                    <h3>Личный прогресс</h3>
+                    <p>Родители видят успехи ребёнка в личном кабинете: выполненные проекты, оценки и рекомендации.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-wrap">
+                        <div class="feature-icon">🎓</div>
+                    </div>
+                    <h3>Сертификаты</h3>
+                    <p>По окончании курса каждый ученик получает международный сертификат, подтверждающий навыки.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-wrap">
+                        <div class="feature-icon">💬</div>
+                    </div>
+                    <h3>Мини-группы</h3>
+                    <p>До 12 человек в группе. Преподаватель уделяет внимание каждому ребёнку и помогает раскрыть потенциал.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ОТЗЫВЫ ===== -->
+    <section class="section testimonials">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">Отзывы</div>
+                <h2 class="section-title">Родители <span class="gradient-text">рекомендуют</span></h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p>«Ребёнок в полном восторге от занятий! Сын за 2 года доволен полностью. Очень удобная платформа, преподаватели внимательные.»</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">А</div>
+                        <div class="author-info">
+                            <strong>Амина</strong>
+                            <span>мама ученика, 10 лет</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p>«Очень понравился курс программирования на базе Roblox — ребёнок в восторге, а это самое главное! Дети сами ждут следующего урока.»</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">М</div>
+                        <div class="author-info">
+                            <strong>Магомед</strong>
+                            <span>папа ученика, 12 лет</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p>«Замечательная школа! Ребёнок научился создавать свои игры и сайты. Преподаватели всегда на связи, помогают с любыми вопросами.»</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">Х</div>
+                        <div class="author-info">
+                            <strong>Хава</strong>
+                            <span>мама ученицы, 9 лет</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== КОНТАКТЫ ===== -->
+    <section class="section contacts" id="contacts">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">Контакты</div>
+                <h2 class="section-title">Запишитесь на <span class="gradient-text">бесплатный урок</span></h2>
+                <p class="section-desc">Оставьте заявку — и мы свяжемся с вами в течение 15 минут, чтобы подобрать удобное время.</p>
+            </div>
+            <div class="contacts-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h3>Адрес</h3>
+                    <p>г. Грозный,<br>ул. Умара Кадырова, 21</p>
+                    <a href="https://yandex.ru/maps/?text=Грозный%20улица%20Умара%20Кадырова%2021" target="_blank" class="contact-link">Показать на карте →</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <h3>Телефон</h3>
+                    <p><a href="tel:+79667222244" class="phone-link">+7 (966) 722-22-44</a></p>
+                    <p class="contact-note">Пн–Сб: 10:00 – 18:30</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">✉️</div>
+                    <h3>Email</h3>
+                    <p><a href="mailto:grozny@algoritmika.org" class="email-link">grozny@algoritmika.org</a></p>
+                    <p class="contact-note">Ответим в течение дня</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">🌐</div>
+                    <h3>Сайт</h3>
+                    <p><a href="https://grozny.algoritmika.org" target="_blank" class="site-link">grozny.algoritmika.org</a></p>
+                    <p class="contact-note">Актуальная информация</p>
+                </div>
+            </div>
+
+            <div class="cta-box">
+                <div class="cta-glow"></div>
+                <h2>Готовы начать <span class="gradient-text">путь в IT?</span></h2>
+                <p>Запишитесь на бесплатный пробный урок прямо сейчас!</p>
+                <div class="cta-actions">
+                    <a href="tel:+79667222244" class="btn btn-primary btn-large">
+                        <span>📞 Позвонить</span>
+                    </a>
+                    <a href="https://grozny.algoritmika.org" target="_blank" class="btn btn-outline btn-large">
+                        <span>Перейти на сайт</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ФУТЕР ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <div class="logo-icon">
+                            <span class="bracket">&lt;</span>
+                            <span class="slash">/</span>
+                            <span class="bracket">&gt;</span>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-main">АЛГОРИТМИКА</span>
+                            <span class="logo-sub">ГРОЗНЫЙ</span>
+                        </div>
+                    </a>
+                    <p>Международная школа программирования и математики для детей от 6 до 18 лет.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="#about">О школе</a></li>
+                        <li><a href="#courses">Курсы</a></li>
+                        <li><a href="#features">Преимущества</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <ul>
+                        <li>г. Грозный, ул. Умара Кадырова, 21</li>
+                        <li><a href="tel:+79667222244">+7 (966) 722-22-44</a></li>
+                        <li><a href="mailto:grozny@algoritmika.org">grozny@algoritmika.org</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Соцсети</h4>
+                    <div class="socials">
+                        <a href="https://vk.com/algoritmika_grozny" target="_blank" class="social-btn" aria-label="VK">VK</a>
+                        <a href="https://t.me/algoritmikagrozny" target="_blank" class="social-btn" aria-label="Telegram">TG</a>
+                        <a href="https://wa.me/79667222244" target="_blank" class="social-btn" aria-label="WhatsApp">WA</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Алгоритмика Грозный. Все права защищены.</p>
+                <p>Международная школа программирования для детей</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
