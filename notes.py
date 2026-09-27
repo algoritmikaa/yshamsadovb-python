@@ -29,8 +29,8 @@ app = QApplication([])
 # Главное окно с общими стилями
 # ------------------------------------------------------------
 main_win = QWidget()
-main_win.setWindowTitle('📌 Умные заметки')
-main_win.resize(950, 650)
+main_win.setWindowTitle('📌 Карточки для запомаминание')
+main_win.resize(1050, 750)
 main_win.setStyleSheet("""
     QWidget {
         background-color: #F5F7FA;
